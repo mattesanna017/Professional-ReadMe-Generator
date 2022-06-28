@@ -66,7 +66,7 @@ inquirer
     })
 
 const htmlRender = (response) => {
-    readMe = `#${response.title_of_Project}
+    readMe = `# ${response.title_of_Project}
 ${licenseImg}
         
 ## Description
