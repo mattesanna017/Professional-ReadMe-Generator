@@ -1,8 +1,8 @@
-# fff
-![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)
+# Professional Read Me
+![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)
         
 ## Description
-ddd
+Tips and codes to crete a readme file
     
 ## Table of Contents
 - [Installation](#installation)
@@ -14,15 +14,15 @@ ddd
     
     
 ## Installation
-dd.
+node.js.
 ## Usage
-sdsd.
+To build professional read me file.
 ## License
-Licensed byApache License 2.0.
+Licensed byGNU General Public License v2.0.
 ## Contribution
-ff.
+My contribute was to follow the lectures.
 ## Test 
-ddd.
+download json packages and the run node.
     
 ## Questions
-For further question or any kind of issue, please visit https://github.com/ddd, or contact ddd.
+For further question or any kind of issue, please visit https://github.com/mattesanna017, or contact readme@gmail.com.
