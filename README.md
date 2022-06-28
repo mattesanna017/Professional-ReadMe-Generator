@@ -1,4 +1,6 @@
-# User Story
+# Professional Read Me Info 
+
+## User Story
 
 ```md
 AS A developer
@@ -27,6 +29,7 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Walkthrough video 
+
 
 
 ## URL of GitHub repository

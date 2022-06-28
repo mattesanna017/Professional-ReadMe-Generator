@@ -1,5 +1,3 @@
-let licenseDescription = "";
-let licenseImg ="";
 
 const inquirer = require('inquirer');
 
@@ -102,6 +100,8 @@ err ? console.error(err) : console.log("Your Project has been created!")
 
 }
 
+let licenseDescription = "";
+let licenseImg ="";
 
 const licensePicked = (response) => {
     if (response.license === "Apache License 2.0"){
