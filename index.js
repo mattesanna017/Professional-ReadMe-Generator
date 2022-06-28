@@ -124,7 +124,7 @@ const licensePicked = (response) => {
         licenseImg= "![license](https://img.shields.io/badge/license-MLT%20license-green)"
     }
 
-    licenseDescription = "Licensed by" + response.license 
+    licenseDescription = "Licensed by " + response.license 
     
     
 }

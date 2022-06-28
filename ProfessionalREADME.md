@@ -1,8 +1,8 @@
-# Professional Read Me
-![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)
+# Professional Read me
+![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)
         
 ## Description
-Tips and codes to crete a readme file
+Tips and codes to build a read me
     
 ## Table of Contents
 - [Installation](#installation)
@@ -14,15 +14,15 @@ Tips and codes to crete a readme file
     
     
 ## Installation
-node.js.
+With Node .
 ## Usage
-To build professional read me file.
+As a guide to create read me files.
 ## License
-Licensed byGNU General Public License v2.0.
+Licensed by Apache License 2.0.
 ## Contribution
-My contribute was to follow the lectures.
+I followed the lectures of the Bootcamp.
 ## Test 
-download json packages and the run node.
+Download package jso with inquirer and run node.
     
 ## Questions
 For further question or any kind of issue, please visit https://github.com/mattesanna017, or contact readme@gmail.com.
