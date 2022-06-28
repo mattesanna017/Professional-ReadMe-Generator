@@ -66,41 +66,39 @@ inquirer
     })
 
 const htmlRender = (response) => {
-    readMe = `
-    #${response.title_of_Project}
-    ${licenseImg}
+    readMe = `#${response.title_of_Project}
+${licenseImg}
         
-    ## Description
-    ${response.description}
+## Description
+${response.description}
     
-    ## Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Contribution](#contribution)
-    -[Test](#test)
-    -[Questions](#questions)
+## Table of Contents
+-[Installation](#installation)
+-[Usage](#usage)
+-[License](#license)
+-[Contribution](#contribution)
+-[Test](#test)
+-[Questions](#questions)
     
     
-    ## Installation
-    ${response.installation}.
-    ## Usage
-    ${response.usage}.
-    ## License
-    ${licenseDescription}.
-    ## Contribution
-    ${response.contribution}.
-    ## Test 
-    ${response.test}.
+## Installation
+${response.installation}.
+## Usage
+${response.usage}.
+## License
+${licenseDescription}.
+## Contribution
+${response.contribution}.
+## Test 
+${response.test}.
     
-    ## Questions
-    For further question or any kind of issue, please visit https://github.com/${response.github}, or contact ${response.email}.
-    `
+## Questions
+For further question or any kind of issue, please visit https://github.com/${response.github}, or contact ${response.email}.`
     
-    const fs = require('fs');
-    fs.writeFile('README.md', readMe, (err) =>
-    err ? console.error(err) : console.log("Your Project has been created!")
-    );
+const fs = require('fs');
+fs.writeFile('README.md', readMe, (err) =>
+err ? console.error(err) : console.log("Your Project has been created!")
+);
 
 }
 
