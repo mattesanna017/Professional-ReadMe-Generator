@@ -96,7 +96,7 @@ ${response.test}.
 For further question or any kind of issue, please visit https://github.com/${response.github}, or contact ${response.email}.`
     
 const fs = require('fs');
-fs.writeFile('README.md', readMe, (err) =>
+fs.writeFile('ProfessionalREADME.md', readMe, (err) =>
 err ? console.error(err) : console.log("Your Project has been created!")
 );
 
