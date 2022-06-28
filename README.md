@@ -28,9 +28,10 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Walkthrough video 
-
-
+## Walkthrough video Link
+https://youtu.be/0PxRgkIhf8U
+(I wasn't able to record on ScreenCastify because the app didn't save the recordings in my screencaify profile)
 
 ## URL of GitHub repository
+https://github.com/mattesanna017/week-09-homework
 
