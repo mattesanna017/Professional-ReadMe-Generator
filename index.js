@@ -1,3 +1,6 @@
+let licenseDescription = "";
+let licenseImg ="";
+
 const inquirer = require('inquirer');
 
 inquirer
@@ -30,7 +33,7 @@ inquirer
             type: 'list',
             name: 'license',
             message:'Pick a license:',
-            choices: [ "Apache License 2.0", "GNU General Public License v2.0","GNU General Public License v3.0","ISC License","MIT License","BLANK"]
+            choices: [ "Apache License 2.0", "GNU General Public License v2.0","GNU General Public License v3.0","ISC License","MIT License"]
         },
     
         {
@@ -57,20 +60,20 @@ inquirer
             message:'Type email for Questions:'
         },
     ])
-    .then((answers) => {
-    readMeRender(answers),
-    licensePicked (answers)
+    .then((response) => {
+    licensePicked (response)
+    htmlRender(response)
     })
 
-const readMeRender = (answers) => {
+const htmlRender = (response) => {
     readMe = `
-    #${answers.title_of_Project}
+    #${response.title_of_Project}
     ${licenseImg}
         
-    ##Description
-    ${answers.description}
+    ## Description
+    ${response.description}
     
-    ##Table of Contents
+    ## Table of Contents
     -[Installation](#installation)
     -[Usage](#usage)
     -[License](#license)
@@ -79,57 +82,51 @@ const readMeRender = (answers) => {
     -[Questions](#questions)
     
     
-    ##Installation
-    ${answers.installation}.
-    ##Usage
-        ${answers.usage}.
-    ##License
+    ## Installation
+    ${response.installation}.
+    ## Usage
+    ${response.usage}.
+    ## License
     ${licenseDescription}.
-    ##Contribution
-    ${answers.contribution}.
-    ##Test 
-    ${answers.test}.
+    ## Contribution
+    ${response.contribution}.
+    ## Test 
+    ${response.test}.
     
-    ##Questions
-    For further question or any kind of issue, please visit https://github.com/${answers.github}, or contact ${answers.email}.
+    ## Questions
+    For further question or any kind of issue, please visit https://github.com/${response.github}, or contact ${response.email}.
     `
     
     const fs = require('fs');
-    fs.writeFile('README.md', readMe, (err, data) =>
-    err ? console.error(error) : console.log("Your Project has been created!")
+    fs.writeFile('README.md', readMe, (err) =>
+    err ? console.error(err) : console.log("Your Project has been created!")
     );
 
 }
 
-let licenseDescription = "";
-let licenseImg ="";
 
-const licensePicked = (answers) => {
-    if (answers.license === "Apache License 2.0"){
+const licensePicked = (response) => {
+    if (response.license === "Apache License 2.0"){
         licenseImg= "![license](https://img.shields.io/badge/license-Apache%20License%202.0-green)"
     } 
 
-    if (answers.license === "GNU General Public License v2.0"){
+    if (response.license === "GNU General Public License v2.0"){
         licenseImg= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v2.0-green)"
     } 
     
-    if (answers.license === "GNU General Public License v3.0"){
+    if (response.license === "GNU General Public License v3.0"){
         licenseImg= "![license](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-green)"
     } 
     
-    if (answers.license === "ISC License"){
+    if (response.license === "ISC License"){
         licenseImg= "![license](https://img.shields.io/badge/license-ISC%20license-green)"
     } 
     
-    if (answers.license === "MIT License"){
+    if (response.license === "MIT License"){
         licenseImg= "![license](https://img.shields.io/badge/license-MLT%20license-green)"
     }
-    
-    if (answers.license === "BLANK"){
-        licenseImg=""
-    }
 
-      licenseDescription = "Licensed by" + answers.license
+    licenseDescription = "Licensed by" + response.license 
     
     
 }
